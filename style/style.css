@@ -1,6 +1,10 @@
 /* ### General Style ###*/
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  }
 
 :root {
   --primary-btn-color: #167BF7;
@@ -10,18 +14,27 @@
 }
 
 html {
-  width: 1440px;
   font-size: 16px;
   background-color: var(--background-color);
   color: var(--font-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 
 /* Banner style*/
 
 .header__banner {
-  height: 680px;
+  height: 100vh;
   background-image: url(../assets/alura-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header__banner .header__content {
@@ -30,6 +43,8 @@ html {
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-left: 3.375rem;
+  padding: 7.812rem 0;
 }
 
 .header__banner .header__content h1 {
@@ -46,30 +61,51 @@ html {
   margin-bottom: 3.375rem;
 }
 
-.header__banner .header__content button {
+.header__banner .header__content .cta-buttons {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header__banner .header__content .cta-buttons li{
   width: 80%;
   height: 56px;
   /* background-color: var(--primary-btn-color); */
   border-radius: 8px;
-  color: var(--font-color);
+  font-family: 'Inter';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header__banner .header__content .header__cta-button {
+.header__banner .header__content .cta-buttons .header__primary-button {
   background-color: var(--primary-btn-color);
   border: none;
-  margin-bottom: 1rem;
 }
 
-.header__banner .header__content .header__secundary-button {
+.header__banner .header__content .cta-buttons .header__secundary-button {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
+}
+
+.header__primary-button a,
+.header__secondary-button a {
   color: var(--font-color);
 }
 
 .header__banner .header__content .banner__footnote {
+  display: block;
   font-family: 'Inter';
   font-weight: 400;
   font-size: .75rem;
   line-height: .9rem;
   color: var(--footnote-color);
 }
+
+/* ### Feature section style ### */
