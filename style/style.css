@@ -155,9 +155,8 @@ a {
 }
 
 .feature_primary-button {
-  display: block;
-  width: 162.88px;
-  height: 56px;
+  display: inline-block;
+  padding: 1rem;
   margin-top: 1rem;
 }
 
