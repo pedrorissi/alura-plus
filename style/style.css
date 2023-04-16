@@ -9,14 +9,32 @@
 :root {
   --primary-btn-color: #167BF7;
   --background-color: #00030C;
-  --font-color: #FFF;
+  --title-font-color: #FFF;
+  --paragraph-font-color: #f9f9f9;
   --footnote-color: #C0C0C0;
 }
 
 html {
   font-size: 16px;
   background-color: var(--background-color);
-  color: var(--font-color);
+  color: var(--title-font-color);
+}
+
+h2 {
+  font-family: 'Inter';
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+p {
+  font-family: 'Inter';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: .8;
+  color: var(--paragraph-font-color);
+
 }
 
 ul {
@@ -25,6 +43,17 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.primary-button {
+  background-color: var(--primary-btn-color);
+  color: var(--title-font-color);
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1rem;
+  /* line-height: 150%; */
+  text-align: center;
+  border-radius: .5rem;
 }
 
 
@@ -71,10 +100,9 @@ a {
   gap: 1rem;
 }
 
-.header__banner .header__content .cta-buttons li{
+.header__banner .header__content .cta-buttons li {
   width: 80%;
   height: 56px;
-  /* background-color: var(--primary-btn-color); */
   border-radius: 8px;
   font-family: 'Inter';
   font-size: 1rem;
@@ -84,7 +112,8 @@ a {
   justify-content: center;
 }
 
-.header__banner .header__content .cta-buttons .header__primary-button {
+.header__banner .header__content .cta-buttons .header__primary-button,
+.feature_primary-button {
   background-color: var(--primary-btn-color);
   border: none;
 }
@@ -95,8 +124,9 @@ a {
 }
 
 .header__primary-button a,
-.header__secondary-button a {
-  color: var(--font-color);
+.header__secondary-button a,
+.feature_primary-button {
+  color: var(--title-font-color);
 }
 
 .header__banner .header__content .banner__footnote {
@@ -109,3 +139,23 @@ a {
 }
 
 /* ### Feature section style ### */
+
+.feature {
+  display: grid;
+  grid-template-rows: repeat(3, 560px);
+}
+
+.feature .feature__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10.3125rem;
+  gap: 4.125rem;
+}
+
+.feature_primary-button {
+  display: block;
+  width: 162.88px;
+  height: 56px;
+  margin-top: 1rem;
+}
