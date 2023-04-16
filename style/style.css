@@ -209,4 +209,5 @@ footer .footer__links {
 footer .footer__copyright,
 footer .footer__company {
   font-size: .875rem;
+  text-align: center;
 }
