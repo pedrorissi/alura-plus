@@ -159,3 +159,26 @@ a {
   height: 56px;
   margin-top: 1rem;
 }
+
+/* #### Featured devices section #### */
+
+.feature__devices {
+  display: flex;
+  margin: 0 auto;
+  margin: 8.5rem 9.6875rem 9.25rem;
+}
+
+.feature__devices .devices__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__devices .devices__section h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+  margin-top: 1rem;
+}
